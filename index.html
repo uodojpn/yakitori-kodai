@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炭火焼鳥こーだい</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: sans-serif;
+            line-height:1.6;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+.hero{
+    background-image: url("yakitori.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    position: relative;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.4);
+}
+.hero h1,
+.hero p{
+    position:relative;
+    z-index:1;
+}
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:1.2rem;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        section{
+            background:white;
+            margin-bottom:20px;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            margin-bottom:20px;
+            color:#c0392b;
+        }
+
+        .menu-item{
+            display:flex;
+            justify-content:space-between;
+            padding:10px 0;
+            border-bottom:1px solid #ddd;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#c0392b;
+            color:white;
+            text-decoration:none;
+            padding:15px 30px;
+            border-radius:5px;
+            margin-top:20px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+        header img{
+    width:300px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <header class="hero">
+    <h1>炭火焼鳥こーだい</h1>
+    <p>ビール3杯目からが本番です。</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>店舗紹介</h2>
+        <p>
+            大阪の片隅でひっそり営業する架空の焼鳥店。
+            備長炭でじっくり焼き上げる焼鳥と、
+            冷えたビールが自慢です。
+        </p>
+    </section>
+
+    <section>
+        <h2>おすすめメニュー</h2>
+
+        <div class="menu-item">
+            <span>ねぎま</span>
+            <span>180円</span>
+        </div>
+
+        <div class="menu-item">
+            <span>かわ</span>
+            <span>150000円</span>
+        </div>
+
+        <div class="menu-item">
+            <span>ぼんじり</span>
+            <span>200円</span>
+        </div>
+
+        <div class="menu-item">
+            <span>つくね</span>
+            <span>250円</span>
+        </div>
+
+         <div class="menu-item">
+            <span>ビール</span>
+            <span>10円</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>店舗情報</h2>
+
+        <p>住所：大阪府大阪市住吉区長居東4-11-5 501</p>
+        <p>営業時間：25:00〜26:00</p>
+        <p>定休日：月曜日</p>
+        <p>TEL：080-1461-1529</p>
+
+        <a href="#" class="btn">予約できない</a>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 炭火焼鳥こーだい</p>
+</footer>
+
+</body>
+</html>
